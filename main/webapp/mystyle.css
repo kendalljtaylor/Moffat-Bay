@@ -1,0 +1,491 @@
+@charset "UTF-8";/*
+
+Bravo Team Project
+CSD440: Capstone Project
+Moffat-Bay Lodge
+- Jessica Hall
+- Outhayvanh Somchaleun
+- Taylor Kendall
+- Victor Gregory 
+*/
+
+/* === Reset and Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1920px;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  background-color: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* === Login === */
+
+.background-image {
+   background-image: url('images/background.jpg');
+   background-size: 100%;
+}
+
+.login-form {
+   background-color: #669999;
+   height: 50vh;
+   width: 50vw;
+   margin-top: 20px;
+   margin-left: 25%;
+   margin-bottom: 20px;
+   text-align: center;
+   position: relative;
+   font-size: 25px;
+}
+
+.login-input {
+   background-color: #d9d9d9;
+   position: absolute;
+   height: 35vh;
+   width: 40vw;
+   margin-top: 25px;
+   margin-left: 100px;
+   text-align: center;
+   padding: 10px;
+   font-size: 18px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+   width: 100%;
+   height: 35px;
+   display: inline-block;
+   border: 1px solid #ccc;
+}
+
+.login-button {
+   border-radius: 2px;
+   background-color: #669999;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.login-button:hover {
+   opacity: .75;
+   cursor: pointer;
+}
+
+/* === Register === */
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #d9d9d9;
+      height: 60vh;
+      width: 50vw;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .register_button {
+      border-radius: 2px;
+      background-color: #669999;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+    
+    small {
+   	   color: red;
+   	}
+
+
+/* === Images === */
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Navigation Bar === */
+.navheader {
+  width: 100%;
+  height: 40px;
+  background: #6d8c96;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  margin-left: 50px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+}
+
+.menu-item a:hover {
+  color: #0C5294;
+}
+
+.menu-item a::before {
+  content: '';
+  position: absolute;
+  left: -0.8vw;
+  right: -0.8vw;
+  bottom: -0.8vh;
+}
+
+/* === Right-side Navigation === */
+.menu-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.search-form input[type="text"] {
+  padding: 2px 12px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.menu-login a {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  display: inline-block;
+  transition: none;
+}
+
+/* === Banner Hero Overlay === */
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2vw;
+  border-radius: 12px;
+  max-width: 80vw;
+}
+
+.banner-overlay h1 {
+  font-size: 5vw;
+  margin-bottom: 1vw;
+}
+
+.banner-overlay p {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+/* Buttons */
+.banner-buttons {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8vw 4vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background-color: #82BB81;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #6ea76d;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #fff;
+  color: #121212;
+}
+
+
+/* === Footer Styles === */
+.footer {
+  background-color: #1E1E1E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+  gap: 3vw;
+  width: 100%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.footer-left,
+.footer-right,
+.footer-column.subscribe {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+/* === Footer heading styles === */
+.footer-column h2,
+.footer-left h3,
+.footer-right h3 {
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+  font-weight: 500;
+  }
+
+.footer-column.subscribe h2 {
+  text-align: center;
+}
+
+/* Footer menu links */
+.footer .menu {
+  display: block;
+}
+
+.footer .menu-item {
+  margin-top: 1vw;
+}
+
+.footer .menu-item a {
+  font-size: .9vw;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0;
+  position: relative;
+}
+
+.footer .menu-item a::before {
+  background: #82BB81;
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  transition: width 0.3s, background 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.footer .menu-item a:hover {
+  color: #0C5294;
+}
+
+.footer .menu-item a:hover::before {
+  width: 100%;
+  background: #0C5294;
+}
+
+/* === Subscribe section === */
+.footer-column.subscribe p {
+  font-size: .9vw;
+  font-weight: 300;
+  line-height: 2em;
+  color: #ffffffbb;
+  max-width: 320px;
+  text-align: center;
+  margin: 0 auto 1vw auto;
+}
+
+/* === Email form === */
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.email-form input[type="email"] {
+  padding: 0.5vw 1vw;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ffffff;
+  height: 2.5vw;
+  width: 15vw;
+  font-size: .8vw;
+  color: #000000;
+  text-align: center;
+}
+
+.email-form button {
+  background-color: #82BB81;
+  color: #ffff;
+  cursor: pointer;
+  padding: .6vw 2vw;
+  border: 2px solid #82BB81;
+  border-radius: 4px;
+  font-size: .8vw;
+}
+
+.email-form button:hover {
+  background-color: #121212;
+}
+
+/* === Socials === */
+.socials {
+  margin-top: 1.5vw;
+  text-align: center;
+}
+
+.socials h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.socials img {
+  height: 1.5em;
+  margin: 0 0.5vw;
+}
+
+/* === Bottom section === */
+.footer-section.bottom-section {
+  text-align: center;
+  font-size: 0.9vw;
+  color: #cccccc;
+}
+
+/* === Signup feedback === */
+.signup-feedback {
+  color: #fff;
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 1vw;
+}
+
+/* === Responsive Footer === */
+@media only screen and (max-width: 750px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column h2,
+  .footer-left h3,
+  .footer-right h3 {
+    font-size: 4vw;
+    margin: 1.5vw 0;
+  }
+
+  .footer-column.subscribe p {
+    font-size: 1vw;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .footer .menu-item {
+    margin: 1vw auto;
+  }
+
+  .footer .menu-item a {
+    font-size: 1vw;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 100%;
+  }
+
+  .email-form input[type="email"] {
+    padding: 1vw 2vw;
+    height: auto;
+    width: 80vw;
+    font-size: 1vw;
+  }
+
+  .email-form button {
+    font-size: 1vw;
+    border-radius: 2px;
+    width: auto;
+    margin-top: 1vw;
+  }
+}
