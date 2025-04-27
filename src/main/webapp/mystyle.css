@@ -60,14 +60,14 @@ h1 {
    font-size: 18px;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=number] {
    width: 100%;
    height: 35px;
    display: inline-block;
    border: 1px solid #ccc;
 }
 
-.login-button {
+.button {
    border-radius: 2px;
    background-color: #669999;
    color: white;
@@ -87,13 +87,12 @@ input[type=text], input[type=password], input[type=email] {
       max-width: 500px;
       margin: 50px auto;
       background-color: #d9d9d9;
-      height: 60vh;
       width: 50vw;
       padding: 10px;
       text-align: center;
     }
     
-    .register_button {
+    .book-btn {
       border-radius: 2px;
       background-color: #669999;
       color: white;
@@ -106,8 +105,153 @@ input[type=text], input[type=password], input[type=email] {
     small {
    	   color: red;
    	}
+   	
+/* === About Us === */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 400px;
+    }
 
+    /* Text Box and Lodge Image */
+    .text-box,
+    .image-box {
+      flex: 1 1 50%;
+      min-height: 400px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+    }
 
+    /* == about us box == */
+    .text-box.dark {
+      background-color: #1c4a65;
+    }
+
+    /* == brief history box == */
+    .text-box.light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .image-box {
+      background-size: cover;
+      background-position: center;
+    }
+
+/* === About Us === */
+.about-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align top of text and image */
+  gap: 0px; /* Spacing between image and text */
+  padding: 5px;
+}
+
+.div-box1 {
+  width: 550px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  text-align: left;
+  background-color: rgba(34, 122, 210, 0.819); /* fixed invalid value */
+  color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.div-box2 {
+  width: 550px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  text-align: left;
+  background-color: rgba(34, 122, 210, 0.819); /* fixed invalid value */
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  justify-content: flex-end; /* pushes child to the right */
+}
+
+.img1 img {
+  max-width: 450px;
+  height: auto;
+  border-radius: 15px;
+}
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 400px;
+    }
+
+    /* Text Box and Lodge Image */
+    .text-box,
+    .image-box {
+      flex: 1 1 50%;
+      min-height: 400px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+    }
+
+    /* == about us box == */
+    .text-box.dark {
+      background-color: #1c4a65;
+    }
+
+    /* == brief history box == */
+    .text-box.light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .image-box {
+      background-size: cover;
+      background-position: center;
+    }
+    
+/* === Summary === */
+  .reserve-button {
+  float: left;
+  margin-left: 120px;
+  border-radius: 2px;
+  }
+  .confirm-button {
+   	  border-radius: 2px;
+      background-color: #669999;
+      color: white;
+      text-align: center;
+      padding: 10px;
+   }
+  .cancel-button {
+  float: right;
+  margin-right: 120px;
+  }
+  .cancel {
+      border-radius: 2px;
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 10px;
+  }
+  .summary-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #d9d9d9;
+      height: 50vh;
+      width: 50vw;
+      padding: 10px;
+      text-align: center;
+      }
+      
+    /* Use a soft and bright pale blue for contact text and links */  
+    .contact-info p,
+	.contact-info a {
+  		color:  white;
+	}
+      
 /* === Images === */
   img {
   max-width: 100%;

@@ -38,17 +38,31 @@
         }
       %>
       
-  <%
-    String successMessage = (String) request.getAttribute("successMessage");
-    if (successMessage != null) {
-  %>
-    <div class="success-message">
-      <p><%= successMessage %></p>
-    </div>
-  <%
-    }
-  %>
+      <!-- Display success message if user successfully logged in -->
+      <%
+        String successMessage = (String) request.getAttribute("successMessage");
+        if (successMessage != null) {
+      %>
+        <div class="success-message">
+          <p><%= successMessage %></p>
+        </div>
+      <%
+        }
+      %>
 
+      <!-- Display the message if user needs to log in before booking a reservation -->
+      <%
+        String message = (String) request.getAttribute("message");
+        if (message != null) {
+      %>
+        <div class="info-message">
+          <p><%= message %></p>
+        </div>
+      <%
+        }
+      %>
+
+      <!-- Login Form -->
       <div class="login-input">
         <form action="LoginServlet" method="post">
           <label for="email"><b>Email Address</b></label>
@@ -57,7 +71,7 @@
           <label for="password"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" required><br>
           
-          <button class="login-button" type="submit">Log In</button>
+          <button class="button" type="submit">Log In</button>
           <p>Don't have an account? <a href="register.jsp">Register here.</a></p>
         </form>
       </div>
@@ -67,3 +81,4 @@
   </div>
 </body>
 </html>
+

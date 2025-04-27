@@ -7,7 +7,13 @@ import java.sql.*;
 import javax.servlet.annotation.*;
 import com.moffatbay.util.DatabaseUtil; // Import utility class for DB connection
 import org.mindrot.jbcrypt.*;
-
+//BRAVO TEAM
+//MOFFAT BAY LODGE
+//CSD440: CAPSTONE Project
+//- Jessica Hall
+//- Outhayvanh Somchaleun
+//- Taylor Kendall
+//- Victor Gregory -->
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

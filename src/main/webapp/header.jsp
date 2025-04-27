@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
+<!--- BRAVO TEAM
+      MOFFAT BAY LODGE
+      CSD440: CAPSTONE Project
+      - Jessica Hall
+      - Outhayvanh Somchaleun
+      - Taylor Kendall
+      - Victor Gregory -->
+      
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +23,16 @@
     <nav>
       <!-- Logo -->
       <a href="landing.jsp" class="logo">
-        <img src="#" alt="logo" />
+        <img src="images/logo.jpg" alt="logo" width="100" />
       </a>
 
       <!-- Navigation menu -->
       <div class="menu">
         <div class="menu-item"><a href="landing.jsp">Home</a></div>
         <div class="menu-item"><a href="attractions.jsp">Attractions</a></div>
-        <div class="menu-item"><a href="reserve.jsp">Reservations</a></div>
-        <div class="menu-item"><a href="about.jsp">About Us</a></div>
+        <div class="menu-item"><a href="reservation.jsp">Reservations</a></div>
+        <div class="menu-item"><a href="aboutus.jsp">About Us</a></div>
+        <div class="menu-item"><a href="lookup.jsp">Find Reservation</a></div>
       </div>
 
       <!-- Right side: Search bar and session-aware login/logout -->
@@ -41,7 +51,7 @@
         %>
           <!-- User is logged in -->
           <div class="menu-login">
-            <span>Hello, <%= firstName %></span> |
+            <span>Hello, <strong><%= firstName %></strong></span>
             <a href="logout.jsp">Logout</a>
           </div>
         <%

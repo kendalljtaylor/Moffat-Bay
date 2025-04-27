@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
+<!--- BRAVO TEAM
+      MOFFAT BAY LODGE
+      CSD440: CAPSTONE Project
+      - Jessica Hall
+      - Outhayvanh Somchaleun
+      - Taylor Kendall
+      - Victor Gregory -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +60,7 @@
     <label>Confirm Password</label>
     <input type="password" name="confirm_password" required>
 
-    <button class="register_button" type="submit">Register</button>
+    <button class="button" type="submit">Register</button>
   </form>
   <p>Already have an account? <a href="login.jsp">Sign in</a></p>
 </div>

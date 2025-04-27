@@ -41,7 +41,7 @@
       <h1>Welcome to Moffat Bay Lodge</h1>
       <p>Discover thrilling attractions and serene relaxation at our waterfront paradise.</p>
       <div class="banner-buttons">
-        <a href="reserve.jsp" class="btn primary">Book Now</a>
+        <a href="reservation.jsp" class="btn primary">Book Now</a>
         <a href="attractions.jsp" class="btn secondary">Explore Attractions</a>
       </div>
     </div>
