@@ -1,5 +1,14 @@
 package com.moffatbay.bean;
 
+//BRAVO TEAM
+//MOFFAT BAY LODGE
+//CSD440: CAPSTONE Project
+//- Jessica Hall
+//- Outhayvanh Somchaleun
+//- Taylor Kendall
+//- Victor Gregory
+
+
 /**
  * A simple JavaBean to store reservation details
  * such as check-in, check-out, room type, number of guests, and status.

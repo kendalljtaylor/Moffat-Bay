@@ -23,7 +23,7 @@
     <nav>
       <!-- Logo -->
       <a href="landing.jsp" class="logo">
-        <img src="images/logo.jpg" alt="logo" width="100" />
+        <img src="images/logo.jpg" alt="logo" max-height="40px" />
       </a>
 
       <!-- Navigation menu -->
@@ -37,10 +37,6 @@
 
       <!-- Right side: Search bar and session-aware login/logout -->
       <div class="menu-right">
-        <!-- Search form -->
-        <form class="search-form" action="search.jsp" method="GET">
-          <input type="text" name="q" placeholder="Search Moffat Bay..." />
-        </form>
 
         <!-- BEGIN: Show first name if user is logged in -->
         <%
@@ -51,7 +47,7 @@
         %>
           <!-- User is logged in -->
           <div class="menu-login">
-            <span>Hello, <strong><%= firstName %></strong></span>
+            <span>Hello, <strong><%= firstName %></span>
             <a href="logout.jsp">Logout</a>
           </div>
         <%

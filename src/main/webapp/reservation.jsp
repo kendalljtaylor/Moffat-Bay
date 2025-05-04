@@ -23,11 +23,7 @@
   <div class="banner">
     <img src="https://moffat-bay.org/media/site/landing_header.jpg" alt="landing header">
     <div class="banner-overlay">
-      <h1>Moffat Bay Lodge</h1>
-    </div>
-  </div>
-
-  <div class="background-image">
+      <h1>Book a Reservation</h1>
     <div class="form-container">
       
       <!-- Show the login prompt message if it's set -->
@@ -61,13 +57,13 @@
         </div>
 
         <div class="guests-section">
-          <h2>Number of Guests</h2>
+          <label for="guests">Number of Guests</label>
           <input type="number" name="guests" id="guests" required min="1" max="4"
                  value="<%= request.getAttribute("guests") != null ? request.getAttribute("guests") : "" %>">
         </div>
 
         <div class="room-section">
-          <h2>Room Size:</h2>
+          <label for="roomType">Room Size</label>
           <select name="roomType" id="roomType" class="room-select" required>
             <option value="" disabled <%= request.getAttribute("roomType") == null ? "selected" : "" %>>Select a room type</option>
             <option value="Double Full Beds" <%= "Double Full Beds".equals(request.getAttribute("roomType")) ? "selected" : "" %>>Double Full Beds ($126.00/Night)</option>
@@ -80,8 +76,9 @@
         <input type="submit" value="Book" class="book-btn">
       </form>
     </div>
+    </div>
+    </div>
 
     <jsp:include page="footer.jsp"/>
-  </div>
 </body>
 </html>

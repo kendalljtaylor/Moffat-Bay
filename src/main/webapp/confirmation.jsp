@@ -24,10 +24,8 @@
     <img src="https://moffat-bay.org/media/site/landing_header.jpg" alt="landing header">
     <div class="banner-overlay">
       <h1>Moffat Bay Lodge</h1>
-    </div>
-  </div>
 
-  <div class="summary-container">
+  <div class="form-container">
     <h2>Reservation Confirmed</h2><br>
     
     <strong>Check in: <%= request.getAttribute("checkIn") %></strong><br><br>
@@ -42,6 +40,8 @@
     <div class="back-home">
       <a href="landing.jsp">Return to Home</a>
     </div>
+  </div>
+  </div>
   </div>
 
   <jsp:include page="footer.jsp"/>

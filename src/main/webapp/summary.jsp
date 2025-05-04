@@ -23,13 +23,12 @@
   <div class="banner">
     <img src="https://moffat-bay.org/media/site/landing_header.jpg" alt="landing header">
     <div class="banner-overlay">
-      <h1>Moffat Bay Lodge</h1>
-    </div>
-  </div>
+      <h1>Moffat Bay  Lodge</h1>
 
-  <div class="summary-container">
-    <h2>Booking Summary</h2><br>
-    
+  <div class="form-container">
+  	<h2>Reservation Summary</h2><br>
+  	
+  	
     <strong>Check in: <%= request.getAttribute("checkIn") %></strong><br><br>
     <strong>Check out: <%= request.getAttribute("checkOut") %></strong><br><br>
     <strong>Room: <%= request.getAttribute("roomType") %></strong><br><br>
@@ -44,11 +43,10 @@
       </div>
     </form>
 
-    <div class="cancel-button">
       <button class="cancel"><a href="reservation.jsp">Cancel</a></button>
-    </div>
   </div>
-
+</div>
+</div>
   <jsp:include page="footer.jsp"/>
 </body>
 </html>

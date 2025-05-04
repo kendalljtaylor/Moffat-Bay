@@ -20,7 +20,7 @@
 <body>
 <jsp:include page="header.jsp"/>
 
-  <!-- About us! -->
+         <!-- About us! -->
   <div class="row">
     <div class="text-box dark">
       <h2>About Us!</h2>
@@ -32,7 +32,6 @@
     </div>
     <div class="image-box" style="background-image: url('https://www.telluride.com/site/assets/files/34622/6-bedroom_cabin_-_living_area_with_view_of_mountains.2000x1125.webp');"></div>
   </div>
-  
   <!-- Brief Histoy -->
   <div class="row">
     <div class="image-box dark-overlay" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/342977823.jpg?k=6aa280ded50c0a1b559c63d8de057a8dd759eb69add1c96c614830781b2fc411&o=&hp=1');"></div>
@@ -52,13 +51,20 @@
     <br />
     <p>Have questions or want to plan your stay? We’d love to hear from you!</p>
     <br />
-	<div class="contact-info">
-  		<p><strong>Email:</strong> <a href="mailto:info@moffatbaylodge.com">info@moffatbaylodge.com</a></p>
-  		<p><strong>Phone:</strong> <a href="tel:+13605551234">(360) 555-1234</a></p>
-  		<p><strong>Address:</strong> 47 Seafarer's Way, Moffat Island, WA 98261</p>
-	</div>
+    <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:info@moffatbaylodge.com">info@moffatbaylodge.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+13605551234">(360) 555-1234</a></p>
+          <p><strong>Address:</strong> 47 Seafarer's Way, Moffat Island, WA 98261</p>
+    </div>
+  </div>
+   <div class="image-box" style="background-image: url('https://www.thewhitefacelodge.com/wp-content/uploads/2019/07/front_desk.jpg');"></div>
   </div>
 </div>
+</div>
+
+        <script src="script.js"></script>
+    
+    <script type="text/javascript" src="js/script.js"></script>
   <jsp:include page="footer.jsp"/>
 </body>
 </html>

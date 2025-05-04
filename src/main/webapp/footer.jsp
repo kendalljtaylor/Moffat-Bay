@@ -42,9 +42,9 @@
       <div class="footer-right">
         <h3>LEARN MORE</h3>
         <div class="menu">
-          <div class="menu-item"><a href="/about-moffat-bay-lodge/">About Us</a></div>
-          <div class="menu-item"><a href="/attractions/">Attractions</a></div>
-          <div class="menu-item"><a href="/accomodations/">Accommodations</a></div>
+          <div class="menu-item"><a href="aboutus.jsp">About Us</a></div>
+          <div class="menu-item"><a href="attractions.jsp">Attractions</a></div>
+          <div class="menu-item"><a href="lookup.jsp">Reservation Search</a></div>
         </div>
       </div>
     </div>
