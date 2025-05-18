@@ -39,29 +39,30 @@
         }
       %>
       
+  <%-- Added Placeholders --%>
   <form action="RegisterServlet" method="post">
-    <label>Email Address</label>
-    <input type="email" name="email" required>
+  <label>Email Address</label>
+  <input type="email" name="email" required placeholder="jane.doe@example.com">
 
-    <label>First Name</label>
-    <input type="text" name="first_name" required>
+  <label>First Name</label>
+  <input type="text" name="first_name" required placeholder="Jane">
 
-    <label>Last Name</label>
-    <input type="text" name="last_name" required>
+  <label>Last Name</label>
+  <input type="text" name="last_name" required placeholder="Doe">
 
-    <label>Phone Number</label>
-    <input type="text" name="phone" required>
+  <label>Phone Number</label>
+  <input type="text" name="phone" required placeholder="123-456-7890">
 
-    <label>Password</label>
-    <input type="password" name="password" required>
+  <label>Password</label>
+  <input type="password" name="password" required placeholder="Passw0rd!">
+  <small>Must be 8 characters with 1 number, 1 uppercase, and 1 lowercase letter</small>
 
-    <small>Must be 8 characters with 1 number, 1 uppercase, and 1 lowercase letter</small>
+  <label>Confirm Password</label>
+  <input type="password" name="confirm_password" required placeholder="Re-enter password">
 
-    <label>Confirm Password</label>
-    <input type="password" name="confirm_password" required>
+  <button class="button" type="submit">Register</button>
+</form>
 
-    <button class="button" type="submit">Register</button>
-  </form>
   <p>Already have an account? <a href="login.jsp">Sign in</a></p>
 </div>
 

@@ -37,13 +37,23 @@
   <!-- Landing page banner -->
   <div class="banner">
     <img src="https://moffat-bay.org/media/site/landing_header.jpg" alt="landing header">
-    <div class="banner-overlay">
-      <h1>Welcome to Moffat Bay Lodge</h1>
-      <p>Discover thrilling attractions and serene relaxation at our waterfront paradise.</p>
-      <div class="banner-buttons">
-        <a href="reservation.jsp" class="btn primary">Book Now</a>
-        <a href="attractions.jsp" class="btn secondary">Explore Attractions</a>
-      </div>
+  <div class="banner-overlay">
+    <h1>Welcome to Moffat Bay Lodge</h1>
+
+    <div class="banner-logo-row">
+    <p class="welcome-text" style="display:inline;">
+      <img src="https://i.postimg.cc/Gt9fp9hZ/salmon-logo.png" class="salmon-logo" alt="Salmon Left" style="width:75px;height:60px;display:inline-block;" />
+        Discover thrilling attractions and serene relaxation at our waterfront paradise.
+      <img src="https://i.postimg.cc/Gt9fp9hZ/salmon-logo.png" class="salmon-logo flipped" alt="Salmon Right" style="width:75px;height:60px;display:inline-block;" />
+      </p>
+    </div>
+    <br>
+    <br>
+
+    <div class="banner-buttons">
+      <a href="/make-reservations/" class="btn primary">Book Now</a>
+      <a href="/attractions/" class="btn secondary">Explore Attractions</a>
+    </div>
     </div>
   </div>
 

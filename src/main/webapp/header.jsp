@@ -15,7 +15,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-  <link rel="stylesheet" type="text/css" href="mystyle.css" />
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
   <title>Moffat-Bay Lodge</title>
 </head>
 <body>
@@ -23,15 +23,15 @@
     <nav>
       <!-- Logo -->
       <a href="landing.jsp" class="logo">
-        <img src="images/logo.jpg" alt="logo" max-height="40px" />
+        <img src="images/logo.jpg" alt="logo">
       </a>
 
       <!-- Navigation menu -->
       <div class="menu">
         <div class="menu-item"><a href="landing.jsp">Home</a></div>
-        <div class="menu-item"><a href="attractions.jsp">Attractions</a></div>
-        <div class="menu-item"><a href="reservation.jsp">Reservations</a></div>
         <div class="menu-item"><a href="aboutus.jsp">About Us</a></div>
+        <div class="menu-item"><a href="attractions.jsp">Attractions</a></div>
+        <div class="menu-item"><a href="reservation.jsp">Book Reservations</a></div>
         <div class="menu-item"><a href="lookup.jsp">Find Reservation</a></div>
       </div>
 

@@ -72,6 +72,7 @@
           <input type="password" placeholder="Enter Password" name="password" required><br>
           
           <button class="button" type="submit">Log In</button>
+          <br>
           <p>Don't have an account? <a href="register.jsp">Register here.</a></p>
         </form>
       </div>

@@ -32,7 +32,7 @@
 
       <div class="footer-column subscribe">
         <h2>GET IN TOUCH WITH US!</h2>
-        <p>Stay connected with us! Join our mailing list to receive <strong>updates</strong> and <strong>special discounts.</strong></p>
+        <p>Stay connected with us! Join our mailing list to receive <strong style="color: #cccccc">updates</strong> and <strong style="color: #cccccc">special discounts.</strong></p>
         <form class="email-form" method="POST">
           <input type="email" placeholder="Add your email..." required />
           <button type="submit" name="mailform_submit">Subscribe</button>
@@ -52,8 +52,8 @@
  <div class="footer-section bottom-section">
               <p>&copy; 2025 Moffat Bay Lodge</p>
               <p>
-                <strong>Disclaimer:</strong> This site is not intended
-to act as an actual booking site. <strong>Moffat-Bay Lodge</strong> is
+                <strong style="color: #cccccc">Disclaimer:</strong> This site is not intended
+to act as an actual booking site. <strong style="color: #cccccc">Moffat-Bay Lodge</strong> is
 a <em>fictional place and this site is for educational purpose</em>.
               </p>
               <div class="socials">

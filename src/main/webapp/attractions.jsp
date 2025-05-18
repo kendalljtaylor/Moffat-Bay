@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html lang="en">
+
 <!--- BRAVO TEAM
 MOFFAT BAY LODGE
 CSD440: CAPSTONE Project
@@ -7,8 +11,6 @@ CSD440: CAPSTONE Project
 - Outhayvanh Somchaleun
 - Taylor Kendall
 - Victor Gregory -->
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -21,67 +23,64 @@ CSD440: CAPSTONE Project
 </head>
 
 <body>
-<jsp:include page="header.jsp"/>
- <!-- HIKING -->
-        <div class="row">
-          <div class="text-box dark">
-            <h2>HIKING</h2>
-            <hr>
-            <br />
-            <p>Explore new heights as you journey through the beautiful landscapes of Joviedsa Island. There's so much to explore with hiking trails for people of all different skills. 
-             Enjoy casual paths or challenging excursions as you embark on a journey through endless sceneries. </p>
-            <br/>
-          </div>
-          <div class="image-box"
-            style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fHww');">
-          </div>
-        </div>
-        <!-- WHALE WATCHING -->
-        <div class="row">
-          <div class="image-box dark-overlay"
-            style="background-image: url('https://www.embarcaderoresort.com/wp-content/uploads/2021/02/Whale-Watching-Newport-Oregon.jpg');">
-          </div>
-          <div class="text-box light">
-            <h2>WHALE WATCHING</h2>
-            <hr>
-            <br />
-            <p>Joviedsa Island is known for their beautiful scenery and extraordinary whale sightings. Experience nature through our unique whale watching experiences that builds memories to last a lifetime. 
-            Our tours come equipped with binoculars and display features that help you spot and view our wildlife from multiple areas and angles. Come aboard for a adventure that is a perfect get away for couples, families, and nature lovers. </p>
-            <br/>
-          </div>
-          <!-- KAYAKING -->
-          <div class="text-box dark">
-            <h2>KAYAKING</h2>
-            <hr>
-            <br />
-            <p>There's nothing better than being out on the water.  Feel the breeze through your hair as you enjoy the beauty of the outdoors with your friends or family.  With our kayak tours, you have a front row seat to the open ocean and all it has to offer.
-            Whether you're a first-timer or experienced kayaker, you are sure to have a great time. </p>
-            <br/>
-            </a>
-          </div>
-          <div class="image-box"
-            style="background-image: url('https://travelsouthernoregoncoast.com/wp-content/uploads/2024/04/2024TSOC_April_Kayak_sea.jpg');"></div>
-          <div class="image-box dark-overlay"
-            style="background-image: url('https://sustainabletravel.org/wp-content/uploads/Blog-Header-Diver-School-of-Fish.jpg');""></div>
-                      <div class=" text-box light">
-            <h2>Scuba Diving</h2>
-            <hr>
-            <br />
-            <br />
-            <p>Join us in an ultimate adventure as we turn the water into your own personal playground.  Experience all the ocean has to offer as you dive in.  Moffat Bay offers scuba diving packages packed with fun.  
-             Whether you're looking to see wild life up close and personal or explore below the ocean surface, we are sure you'll fall in love.  Immerse yourself in the wonders of the ocean and book your adventure today.</p>
-            <br/>
-            </a>
-            </p>
-          </div>
-        </div>
+  <jsp:include page="header.jsp" />
 
-        <script src="script.js"></script>
-     <script type="text/javascript" src="js/script.js"></script>
-       <jsp:include page="footer.jsp"/>
-</body>
+  <!-- HIKING -->
+  <div class="row">
+    <div class="text-box dark">
+      <h2>HIKING</h2>
+      <hr><br />
+      <p>Explore new heights as you journey through the breathtaking landscapes of Joviedsa Island. With trails designed for both beginners and experienced hikers, there is a path for everyone to enjoy. Walk through quiet forests, climb gentle slopes, and take in sweeping views from scenic lookouts. Along the way, you may spot native wildlife, hear the rustle of leaves in the breeze, and feel a deep connection with nature. Each trail invites you to slow down, breathe deeply, and enjoy the journey.</p>
+      <br />
+    </div>
+    <div class="image-box"
+      style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fHww');">
+    </div>
+  </div>
 
+  <!-- WHALE WATCHING -->
+  <div class="row">
+    <div class="image-box dark-overlay"
+      style="background-image: url('https://www.embarcaderoresort.com/wp-content/uploads/2021/02/Whale-Watching-Newport-Oregon.jpg');">
+    </div>
+    <div class="text-box light">
+      <h2>WHALE WATCHING</h2>
+      <hr><br />
+      <p>Joviedsa Island is known for its incredible views and unforgettable whale watching experiences. Step aboard one of our guided tours and enjoy a peaceful ride through open waters where whales often make their appearance. With the help of onboard binoculars and knowledgeable guides, you will be able to spot orcas, humpbacks, and other marine life in action. This relaxing outing is perfect for couples, families, and anyone who appreciates the beauty of nature. Every tour offers a chance to witness something truly special.</p>
+      <br />
+    </div>
+  </div>
 
+  <!-- KAYAKING -->
+  <div class="row">
+    <div class="text-box dark">
+      <h2>KAYAKING</h2>
+      <hr><br />
+      <p>There is nothing quite like the feeling of being out on the water surrounded by the quiet beauty of the outdoors. Our kayak tours are a fun and peaceful way to explore the coastline of Joviedsa Island. Paddle along clear waters, pass rocky shores, and glide through calm inlets with friends or family. Whether it is your first time or you have years of experience, you will find this activity both refreshing and exciting. Enjoy the freedom of the open water and take in views you can only experience from a kayak.</p>
+      <br />
+    </div>
+    <div class="image-box"
+      style="background-image: url('https://travelsouthernoregoncoast.com/wp-content/uploads/2024/04/2024TSOC_April_Kayak_sea.jpg');">
+    </div>
+  </div>
+
+  <!-- SCUBA DIVING -->
+  <div class="row">
+    <div class="image-box dark-overlay"
+      style="background-image: url('https://sustainabletravel.org/wp-content/uploads/Blog-Header-Diver-School-of-Fish.jpg');">
+    </div>
+    <div class="text-box light">
+      <h2>SCUBA DIVING</h2>
+      <hr><br />
+      <p>Join us for an unforgettable adventure beneath the waves. Scuba diving at Moffat Bay reveals a hidden world filled with color and life. Explore coral reefs, swim alongside schools of fish, and get a close look at sea creatures in their natural environment. Our diving packages include all equipment and guidance needed to ensure a fun and safe experience. Whether you are exploring a reef for the first time or returning for another dive, you will leave the water with new memories and a deeper appreciation for the ocean.</p>
+      <br />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <jsp:include page="footer.jsp" />
 </body>
 
 </html>
+

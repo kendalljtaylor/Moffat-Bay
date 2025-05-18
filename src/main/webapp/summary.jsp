@@ -7,7 +7,7 @@
       - Outhayvanh Somchaleun
       - Taylor Kendall
       - Victor Gregory -->
-      
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,31 +23,36 @@
   <div class="banner">
     <img src="https://moffat-bay.org/media/site/landing_header.jpg" alt="landing header">
     <div class="banner-overlay">
-      <h1>Moffat Bay  Lodge</h1>
+      <h1>Moffat Bay Lodge</h1>
 
-  <div class="form-container">
-  	<h2>Reservation Summary</h2><br>
-  	
-  	
-    <strong>Check in: <%= request.getAttribute("checkIn") %></strong><br><br>
-    <strong>Check out: <%= request.getAttribute("checkOut") %></strong><br><br>
-    <strong>Room: <%= request.getAttribute("roomType") %></strong><br><br>
-    <strong>Number of Guests: <%= request.getAttribute("guests") %></strong><br><br>
-    <strong>Total: $<%= String.format("%.2f", request.getAttribute("totalAmount")) %></strong><br><br>
+    <!-- Move the form-container inside the banner -->
+    <div class="form-container">
+      <h2>Reservation Summary</h2><br>
 
-    <!-- Confirmation form -->
-    <form action="ConfirmReservationServlet" method="post">
-      <input type="hidden" name="reservationId" value="<%= request.getAttribute("reservationId") %>">
-      <div class="reserve-button">
-        <input type="submit" class="confirm-button" value="Confirm Booking">
-      </div>
-    </form>
+      <strong style="color:black">Check in: <%= request.getAttribute("checkIn") %></strong><br><br>
+      <strong>Check out: <%= request.getAttribute("checkOut") %></strong><br><br>
+      <strong>Room: <%= request.getAttribute("roomType") %></strong><br><br>
+      <strong>Number of Guests: <%= request.getAttribute("guests") %></strong><br><br>
+      <strong>Total: $<%= String.format("%.2f", request.getAttribute("totalAmount")) %></strong><br><br>
 
-      <button class="cancel"><a href="reservation.jsp">Cancel</a></button>
+      <!-- Confirmation form -->
+      <form action="ConfirmReservationServlet" method="post">
+        <input type="hidden" name="reservationId" value="<%= request.getAttribute("reservationId") %>">
+        
+        <div class="reserve-buttons">
+          <!-- Confirmation Button -->
+          <input type="submit" class="confirm-button" value="Confirm Booking">
+
+          <!-- Cancel Button -->
+            <button type="button" class="cancel"><a href="reservation.jsp">Cancel</a></button>
+          </a>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 </div>
   <jsp:include page="footer.jsp"/>
 </body>
 </html>
+
 
